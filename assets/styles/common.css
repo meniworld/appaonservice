@@ -1,0 +1,43 @@
+:root {
+    --text: #231805;
+    --background: #fdfaf4;
+    --primary: #e3982d;
+    --secondary: #cfef89;
+    --accent: #9fe959;
+    --red: #FF0000;
+    --black: #000;
+    --white: #fff;
+    --chinese-silver: #ccc;
+    --dark-charcoal: #333;
+    --gray-80: #ddd;
+    --dark-gray: #555;
+    --white-smoke: #f2f2f2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    background-image:
+        radial-gradient(#e53935 1px, transparent 1px),
+        radial-gradient(#43a047 1px, transparent 1px);
+    background-position: 0 0, 25px 25px;
+    background-size: 50px 50px;
+    animation: dotsMove 20s linear infinite;
+    overflow-x: hidden;
+}
+
+@keyframes dotsMove {
+    0% {
+        background-position: 0 0, 25px 25px;
+    }
+
+    100% {
+        background-position: 100px 100px, 125px 125px;
+    }
+}
