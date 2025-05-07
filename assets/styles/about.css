@@ -1,0 +1,141 @@
+.about-hero {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+.about-hero p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    color: var(--text);
+}
+
+.about-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Mission and Vision */
+.about-section.mission-vision {
+    background-color: var(--middle-green);
+    color: var(--white);
+    border-radius: 8px;
+    padding: 60px 20px;
+}
+
+.about-section.mission-vision h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-section.mission-vision p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.features-grid,
+.values-grid,
+.timeline-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.feature-card,
+.value-card,
+.timeline-card {
+    background-color: var(--white);
+    border: 1px solid var(--gray-80);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.feature-card h4,
+.value-card h4,
+.timeline-card h4 {
+    color: var(--dark-charcoal);
+    margin-bottom: 10px;
+}
+
+/* Updated Timeline Section */
+.timeline-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    position: relative;
+    padding-left: 50px;
+    /* Space for the vertical bar */
+}
+
+/* Vertical bar on the left side */
+.timeline-card::before {
+    content: "";
+    position: absolute;
+    left: 14px;
+    /* aligns with the vertical bar */
+    top: 28px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--white);
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+/* Individual timeline cards */
+.timeline-card {
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--white);
+    border: 1px solid var(--gray-80);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    max-width: 800px;
+    position: relative;
+}
+
+/* Year box on the left side of each card */
+.timeline-year {
+    background-color: var(--light-gray);
+    color: var(--dark-charcoal);
+    padding: 10px 20px;
+    border-radius: 8px 0 0 8px;
+    font-weight: bold;
+    min-width: 120px;
+    text-align: center;
+}
+
+/* Content area of each card */
+.timeline-content {
+    padding: 10px 20px;
+    flex-grow: 1;
+}
+
+
+.cta-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: var(--middle-green);
+    color: var(--white);
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
