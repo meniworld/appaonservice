@@ -1,0 +1,63 @@
+.how-it-works {
+    margin: 20px 0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.how-title {
+    font-size: 32px;
+    color: var(--primary);
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.step {
+    background-color: var(--background);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 2px solid var(--primary);
+}
+
+.step:hover {
+    transform: translateY(-10px);
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: var(--accent);
+    animation: bounce 2s infinite;
+}
+
+.step h3 {
+    font-size: 18px;
+    color: var(--dark-charcoal);
+}
+
+.optional {
+    font-size: 14px;
+    color: var(--dark-gray);
+    display: block;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
