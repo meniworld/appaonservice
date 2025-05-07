@@ -1,0 +1,53 @@
+.who-for {
+    margin: 20px 0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.who-title {
+    font-size: 32px;
+    color: var(--primary);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.who-description {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    font-size: 18px;
+    color: var(--dark-charcoal);
+    line-height: 1.6;
+}
+
+.persona-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.persona-card {
+    background-color: var(--background);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 2px solid var(--secondary);
+}
+
+.persona-card:hover {
+    transform: translateY(-10px);
+}
+
+.persona-icon {
+    font-size: 40px;
+    color: var(--accent);
+    margin-bottom: 15px;
+    animation: floatIcon 3s ease-in-out infinite;
+}
+
+.persona-card h3 {
+    font-size: 18px;
+    color: var(--dark-charcoal);
+}
