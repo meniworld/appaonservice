@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Host Registration</title>
+    <link rel="stylesheet" href="../assets/styles/common.css" />
+    <link rel="stylesheet" href="../assets/styles/registration.css" />
+</head>
+
+<body>
+    <div class="registration-container">
+        <form class="registration-box">
+            <h2>Host Registration</h2>
+            <div class="form-group">
+                <div class="form-field">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-field">
+                    <label for="phone">Phone Number *</label>
+                    <input type="text" id="phone" required>
+                </div>
+                <div class="form-field">
+                    <label for="dob">Date of Birth *</label>
+                    <input type="date" id="dob" required>
+                </div>
+                <div class="form-field form-field-full">
+                    <label for="address1">Address Line 1 *</label>
+                    <input type="text" id="address1" required>
+                </div>
+                <div class="form-field form-field-full">
+                    <label for="address2">Address Line 2</label>
+                    <input type="text" id="address2">
+                </div>
+                <div class="form-field">
+                    <label for="city">City *</label>
+                    <input type="text" id="city" required>
+                </div>
+                <div class="form-field">
+                    <label for="zip">Zip Code *</label>
+                    <input type="text" id="zip" required>
+                </div>
+                <div class="form-field">
+                    <label for="country">Country *</label>
+                    <select id="country" required>
+                        <option value="">Select Country</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="India">India</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="state">State *</label>
+                    <input type="text" id="state" required>
+                </div>
+                <div class="form-field">
+                    <label for="password">Password *</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="form-field">
+                    <label for="confirm_password">Confirm Password *</label>
+                    <input type="password" id="confirm_password" required>
+                </div>
+            </div>
+            <div class="btn-wrapper">
+                <button type="submit" class="btn-primary">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
