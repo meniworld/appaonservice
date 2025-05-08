@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complaint Us</title>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+    <link rel="stylesheet" href="../assets/styles/common.css" />
+    <link rel="stylesheet" href="../assets/styles/complaint.css" />
+    <link rel="stylesheet" href="../assets/styles/contact.css" />
+</head>
+
+<body>
+    <section class="complaint-section">
+        <img src="your-top-image.jpg" alt="Complaint Banner" class="complaint-banner" />
+
+        <div class="complaint-container">
+            <h2 class="complaint-title">Complaint Form</h2>
+
+            <form class="complaint-form">
+                <div class="form-group">
+                    <label for="name">Name <span>*</span></label>
+                    <input type="text" id="name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number <span>*</span></label>
+                    <input type="tel" id="phone" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" />
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Complaint Type</label>
+                    <select id="type">
+                        <option value="device-issue">Device Issue</option>
+                        <option value="device-broken">Device Broken</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="complaint">Complaint <span>*</span></label>
+                    <textarea id="complaint" rows="5" required></textarea>
+                </div>
+
+                <div class="verification">
+                    <label>5 + 3 =</label>
+                    <input type="text" placeholder="Answer to verify" required />
+                </div>
+
+                <button type="submit" class="btn-primary">Submit Complaint</button>
+            </form>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

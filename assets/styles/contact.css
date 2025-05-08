@@ -1,6 +1,6 @@
 .contact-section {
     padding: 60px 20px;
-    background-color: var(--white-smoke);
+    margin: 30px 0;
 }
 
 .contact-container {
@@ -60,6 +60,7 @@
     gap: 10px;
     color: var(--dark-charcoal);
     font-weight: 600;
+    margin: 30px 0;
 }
 
 .verification input {
