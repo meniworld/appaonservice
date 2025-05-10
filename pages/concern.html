@@ -14,10 +14,9 @@
 
 <body>
     <section class="complaint-section">
-        <img src="your-top-image.jpg" alt="Complaint Banner" class="complaint-banner" />
 
         <div class="complaint-container">
-            <h2 class="complaint-title">Complaint Form</h2>
+            <h2 class="complaint-title">Submit your concerns</h2>
 
             <form class="complaint-form">
                 <div class="form-group">
@@ -31,30 +30,21 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email">Email <span>*</span></label>
                     <input type="email" id="email" />
                 </div>
 
                 <div class="form-group">
-                    <label for="type">Complaint Type</label>
-                    <select id="type">
-                        <option value="device-issue">Device Issue</option>
-                        <option value="device-broken">Device Broken</option>
-                        <option value="others">Others</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="complaint">Complaint <span>*</span></label>
+                    <label for="complaint">Concerns <span>*</span></label>
                     <textarea id="complaint" rows="5" required></textarea>
                 </div>
 
                 <div class="verification">
-                    <label>5 + 3 =</label>
+                    <label>5 + 3 = <span>*</span></label>
                     <input type="text" placeholder="Answer to verify" required />
                 </div>
 
-                <button type="submit" class="btn-primary">Submit Complaint</button>
+                <button type="submit" class="btn-primary">Submit Concerns</button>
             </form>
         </div>
     </section>
