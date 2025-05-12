@@ -1,75 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-    <!-- FAVICON -->
-    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
-    <link rel="stylesheet" href="../assets/styles/common.css" />
-    <link rel="stylesheet" href="../assets/styles/contact.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="../assets/styles/common.css">
+  <link rel="stylesheet" href="../assets/styles/common-form.css">
+  <link rel="stylesheet" href="../assets/styles/contact.css">
 </head>
-
 <body>
 
-    <section class="contact-section">
-        <div class="contact-container">
-            <h2 class="contact-title">Get in Touch</h2>
-
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name<span>*</span></label>
-                    <input type="text" id="name" required />
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email<span>*</span></label>
-                    <input type="email" id="email" required />
-                </div>
-
-                <div class="form-group">
-                    <label for="phone">Phone Number<span>*</span></label>
-                    <input type="tel" id="phone" required />
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message<span>*</span></label>
-                    <textarea id="message" rows="5" required></textarea>
-                </div>
-
-                <div class="verification">
-                    <label>5 + 3 =</label>
-                    <input type="text" placeholder="Answer to verify" required />
-                </div>
-
-                <button type="submit" class="btn-primary">Send Message</button>
-            </form>
-
-            <div class="contact-info">
-                <h3>Contact Information</h3>
-                <p><strong>Call Us:</strong> +880123456789</p>
-                <p><strong>WhatsApp:</strong> +880987654321</p>
-                <p><strong>Email:</strong> contact@example.com</p>
-            </div>
-
-            <div class="follow-us">
-                <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#" target="_blank">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
-                            alt="Facebook" />
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"
-                            alt="YouTube" />
-                    </a>
-                </div>
-            </div>
+  <div class="contact-container">
+    <!-- Contact Form -->
+    <div class="contact-form-section">
+      <h2>Send Us a Message</h2>
+      <form>
+        <div class="form-group">
+          <input type="text" id="contact-name" placeholder=" " required>
+          <label for="contact-name">Full Name</label>
         </div>
-    </section>
 
+        <div class="form-group">
+          <input type="email" id="contact-email" placeholder=" " required>
+          <label for="contact-email">Email Address</label>
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="contact-phone" placeholder=" " required>
+          <label for="contact-phone">Phone Number</label>
+        </div>
+
+        <div class="form-group">
+          <textarea id="contact-message" placeholder=" " required></textarea>
+          <label for="contact-message">Your Message</label>
+        </div>
+
+        <div class="contact-btn-wrapper">
+          <button type="submit" class="btn-primary">Send Message</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info-box">
+      <h3>Contact Information</h3>
+      <div class="contact-info-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Address Icon"> 
+        123 Main Street, Dhaka, Bangladesh
+      </div>
+      <div class="contact-info-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/455/455705.png" alt="Phone Icon"> 
+        +880 1234-567890
+      </div>
+      <div class="contact-info-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email Icon"> 
+        support@example.com
+      </div>
+      <div class="contact-info-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png" alt="Clock Icon"> 
+        Mon - Fri: 9:00 AM - 6:00 PM
+      </div>
+    </div>
+  </div>
 
 </body>
-
 </html>
