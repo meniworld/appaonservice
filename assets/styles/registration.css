@@ -1,63 +1,63 @@
 .registration-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-    min-height: 100vh;
-}
-
-.registration-box {
-    width: 100%;
     max-width: 800px;
+    margin: 50px auto;
     background-color: var(--white);
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.registration-box h2 {
+.registration-logo {
     text-align: center;
-    margin-bottom: 25px;
-    color: var(--text);
+    margin-bottom: 30px;
 }
 
-.form-group {
+.registration-logo img {
+    width: 120px;
+}
+
+.registration-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 20px auto;
+    text-align: center;
+}
+
+.form-row {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.form-field {
-    flex: 1 1 48%;
-    display: flex;
-    flex-direction: column;
+.form-row .form-group {
+    flex: 1 1 calc(50% - 10px);
 }
 
-.form-field-full {
-    flex: 1 1 100%;
-}
-
-label {
-    font-weight: 600;
-    color: var(--dark-charcoal);
-    margin-bottom: 6px;
-}
-
-input,
-select {
-    padding: 12px;
-    border: 1px solid var(--chinese-silver);
-    border-radius: 8px;
-    font-size: 16px;
-}
-
-.btn-wrapper {
-    margin-top: 25px;
-    text-align: center;
-}
-
-@media (max-width: 600px) {
-    .form-field {
+@media (max-width: 768px) {
+    .form-row .form-group {
         flex: 1 1 100%;
     }
+}
+
+.form-footer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.form-footer label {
+    font-size: 15px;
+    color: var(--dark-charcoal);
+}
+
+.form-footer label a {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.form-footer input[type="checkbox"] {
+    accent-color: var(--primary);
 }
