@@ -1,3 +1,13 @@
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1 1 calc(50% - 10px);
+}
+
 .form-group {
     position: relative;
     margin-bottom: 25px;
@@ -47,4 +57,8 @@
 .form-group textarea {
     resize: vertical;
     min-height: 120px;
+}
+
+input[type="checkbox"] {
+    accent-color: var(--primary);
 }
