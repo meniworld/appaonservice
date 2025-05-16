@@ -27,6 +27,8 @@
     color: var(--white);
     border-radius: 8px;
     padding: 60px 20px;
+    margin: 20px auto;
+    text-align: center;
 }
 
 .about-section.mission-vision h2 {
