@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Appaon | Page Unavailable</title>
+    <link rel="stylesheet" href="../assets/styles/common.css" />
+    <style>
+        /* Background zoom pulse animation */
+
+
+        .coming-soon-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        /* Gradient shimmering effect for title */
+        .coming-soon-title {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            background: linear-gradient(270deg, var(--primary), var(--secondary), var(--primary));
+            background-size: 600% 600%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 5s linear infinite;
+            margin-bottom: 1rem;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        /* Slide up and fade in for message */
+        .coming-soon-message {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--accent);
+            max-width: 600px;
+            line-height: 1.6;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideFadeIn 1.5s ease forwards;
+            animation-delay: 1.2s;
+        }
+
+        @keyframes slideFadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .coming-soon-title {
+                font-size: 2.2rem;
+            }
+
+            .coming-soon-message {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="coming-soon-container">
+        <h1 class="coming-soon-title">Coming Soon</h1>
+        <p class="coming-soon-message">
+            Sorry, currently this page is not available. It will be live shortly.
+        </p>
+    </div>
+</body>
+
+</html>
