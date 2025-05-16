@@ -1,7 +1,7 @@
 .animated-footer {
     position: relative;
-    background-color: var(--secondary);
-    color: var(--white-smoke);
+    background-color: var(--white);
+    color: var(--black);
     padding: 50px 20px 25px;
     font-weight: 400;
     letter-spacing: 0.02em;
@@ -246,7 +246,7 @@
 }
 
 .footer-section ul li a {
-    color: var(--white-smoke);
+    color: var(--black);
     font-size: 1rem;
     transition: all 0.3s ease;
     display: inline-block;
@@ -259,6 +259,7 @@
 
 .animated-text {
     position: relative;
+    color: var(--black);
 }
 
 .animated-text::after {
@@ -353,7 +354,7 @@
     justify-content: space-between;
     align-items: center;
     font-size: 0.9rem;
-    color: #aaa;
+    color: var(--black);
     flex-wrap: wrap;
     gap: 10px;
     opacity: 0;
@@ -367,7 +368,7 @@
 }
 
 .footer-bottom a {
-    color: #aaa;
+    color: var(--black);
     text-decoration: none;
     margin: 0 8px;
     white-space: nowrap;
